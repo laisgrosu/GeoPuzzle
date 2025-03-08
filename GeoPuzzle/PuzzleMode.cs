@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GeoPuzzle
 {
-    public partial class MainMenu : Form
+    public partial class PuzzleMode : Form
     {
-        public MainMenu()
+        public PuzzleMode()
         {
             InitializeComponent();
         }

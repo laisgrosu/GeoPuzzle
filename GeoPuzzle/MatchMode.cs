@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace GeoPuzzle
 {
-    public partial class MainMenu : Form
+    public partial class MatchMode : Form
     {
-        public MainMenu()
+        public MatchMode()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

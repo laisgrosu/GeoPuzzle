@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace GeoPuzzle
 {
-    public partial class MainMenu : Form
+    public partial class FlagMode : Form
     {
-        public MainMenu()
+        public FlagMode()
         {
             InitializeComponent();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
