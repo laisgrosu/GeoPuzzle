@@ -110,5 +110,167 @@
   <ItemGroup>
     <None Include="Resources\pngwing.com %283%291.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\belarsu flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bolivia flsg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brazil flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\canada flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cehia flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chile flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\china flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\columbia flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\costa rica flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuba flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dameraca flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ecuador flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\egypt flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\etiopia flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filipine flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\franta flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guatemala flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\harta europei.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\india flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jamaica flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\japonia flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kazakhstan flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kenya flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lituania flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\madagascar flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mexic flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mongolia flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nigeria flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\north-america-map.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\olanda flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oman flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panama flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\peru flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plonia flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\portugal flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puerto rico flag.pnh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\republica dominicana flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\romania flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\senegal flaf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\simboluri meniu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\south africa flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\south america map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\south coreea flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sua flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sudan flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suriname flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tailanda flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turcia flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uganda flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uk flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uruguay flag.flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\venezuela flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zambia flag.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
