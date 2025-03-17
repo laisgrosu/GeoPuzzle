@@ -55,16 +55,16 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(36, 77);
+            this.pictureBox1.Location = new System.Drawing.Point(60, 84);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(223, 132);
+            this.pictureBox1.Size = new System.Drawing.Size(344, 189);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // tb1flag
             // 
-            this.tb1flag.Location = new System.Drawing.Point(77, 236);
+            this.tb1flag.Location = new System.Drawing.Point(153, 279);
             this.tb1flag.Name = "tb1flag";
             this.tb1flag.Size = new System.Drawing.Size(148, 22);
             this.tb1flag.TabIndex = 1;
@@ -72,7 +72,7 @@
             // 
             // tb5flag
             // 
-            this.tb5flag.Location = new System.Drawing.Point(389, 456);
+            this.tb5flag.Location = new System.Drawing.Point(545, 542);
             this.tb5flag.Name = "tb5flag";
             this.tb5flag.Size = new System.Drawing.Size(148, 22);
             this.tb5flag.TabIndex = 2;
@@ -80,70 +80,71 @@
             // 
             // tb2flag
             // 
-            this.tb2flag.Location = new System.Drawing.Point(389, 236);
+            this.tb2flag.Location = new System.Drawing.Point(545, 279);
             this.tb2flag.Name = "tb2flag";
             this.tb2flag.Size = new System.Drawing.Size(148, 22);
             this.tb2flag.TabIndex = 3;
             // 
             // tb3flag
             // 
-            this.tb3flag.Location = new System.Drawing.Point(691, 236);
+            this.tb3flag.Location = new System.Drawing.Point(953, 279);
             this.tb3flag.Name = "tb3flag";
             this.tb3flag.Size = new System.Drawing.Size(148, 22);
             this.tb3flag.TabIndex = 4;
             // 
             // tb6flag
             // 
-            this.tb6flag.Location = new System.Drawing.Point(691, 456);
+            this.tb6flag.Location = new System.Drawing.Point(953, 542);
             this.tb6flag.Name = "tb6flag";
             this.tb6flag.Size = new System.Drawing.Size(148, 22);
             this.tb6flag.TabIndex = 5;
             // 
             // tb4flag
             // 
-            this.tb4flag.Location = new System.Drawing.Point(77, 456);
+            this.tb4flag.Location = new System.Drawing.Point(153, 542);
             this.tb4flag.Name = "tb4flag";
             this.tb4flag.Size = new System.Drawing.Size(148, 22);
             this.tb4flag.TabIndex = 6;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(347, 77);
+            this.pictureBox2.Location = new System.Drawing.Point(448, 84);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(223, 132);
+            this.pictureBox2.Size = new System.Drawing.Size(346, 189);
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(651, 77);
+            this.pictureBox3.Location = new System.Drawing.Point(854, 84);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(223, 132);
+            this.pictureBox3.Size = new System.Drawing.Size(344, 189);
             this.pictureBox3.TabIndex = 8;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(39, 300);
+            this.pictureBox4.Location = new System.Drawing.Point(60, 338);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(223, 132);
+            this.pictureBox4.Size = new System.Drawing.Size(344, 198);
             this.pictureBox4.TabIndex = 9;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(347, 300);
+            this.pictureBox5.Location = new System.Drawing.Point(448, 338);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(223, 132);
+            this.pictureBox5.Size = new System.Drawing.Size(346, 198);
             this.pictureBox5.TabIndex = 10;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Location = new System.Drawing.Point(651, 300);
+            this.pictureBox6.Location = new System.Drawing.Point(854, 338);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(223, 132);
+            this.pictureBox6.Size = new System.Drawing.Size(344, 198);
             this.pictureBox6.TabIndex = 11;
             this.pictureBox6.TabStop = false;
             // 
@@ -151,7 +152,7 @@
             // 
             this.labelFlag.AutoSize = true;
             this.labelFlag.Font = new System.Drawing.Font("Segoe Print", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFlag.Location = new System.Drawing.Point(32, 6);
+            this.labelFlag.Location = new System.Drawing.Point(249, 9);
             this.labelFlag.Name = "labelFlag";
             this.labelFlag.Size = new System.Drawing.Size(837, 52);
             this.labelFlag.TabIndex = 12;
@@ -161,7 +162,7 @@
             // buttonBackFlag
             // 
             this.buttonBackFlag.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBackFlag.Location = new System.Drawing.Point(804, 505);
+            this.buttonBackFlag.Location = new System.Drawing.Point(1117, 628);
             this.buttonBackFlag.Name = "buttonBackFlag";
             this.buttonBackFlag.Size = new System.Drawing.Size(116, 46);
             this.buttonBackFlag.TabIndex = 13;
@@ -172,7 +173,7 @@
             // buttonStartFlag
             // 
             this.buttonStartFlag.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonStartFlag.Location = new System.Drawing.Point(9, 505);
+            this.buttonStartFlag.Location = new System.Drawing.Point(143, 628);
             this.buttonStartFlag.Name = "buttonStartFlag";
             this.buttonStartFlag.Size = new System.Drawing.Size(110, 46);
             this.buttonStartFlag.TabIndex = 14;
@@ -183,7 +184,7 @@
             // lblCNo
             // 
             this.lblCNo.AutoSize = true;
-            this.lblCNo.Location = new System.Drawing.Point(844, 584);
+            this.lblCNo.Location = new System.Drawing.Point(1185, 680);
             this.lblCNo.Name = "lblCNo";
             this.lblCNo.Size = new System.Drawing.Size(48, 16);
             this.lblCNo.TabIndex = 16;
@@ -193,7 +194,7 @@
             // btnSubmit
             // 
             this.btnSubmit.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit.Location = new System.Drawing.Point(9, 570);
+            this.btnSubmit.Location = new System.Drawing.Point(12, 628);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(109, 46);
             this.btnSubmit.TabIndex = 17;
@@ -205,7 +206,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(929, 649);
+            this.ClientSize = new System.Drawing.Size(1245, 756);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.lblCNo);
             this.Controls.Add(this.buttonStartFlag);
