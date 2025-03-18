@@ -129,7 +129,7 @@ namespace GeoPuzzle
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            if ((lblCNo.Text == "1") && (tb1flag.Text == "Brazilia") && (tb2flag.Text == "Portugalia") && (tb3flag.Text == "Japonia") && (tb4flag.Text == "Franta") && (tb5flag.Text == "India") && (tb6flag.Text == "Cehia"))
+            if ((lblCNo.Text == "1") && (tb1flag.Text == "Brazilia") && (tb2flag.Text == "Portugalia") && (tb3flag.Text == "Japonia") && (tb4flag.Text == "Franta")|| (tb4flag.Text == "Franța") && (tb5flag.Text == "India") && (tb6flag.Text == "Cehia"))
             {
                 buttonStartFlag.Enabled = true;
                 btnSubmit.Enabled = false;
@@ -137,7 +137,7 @@ namespace GeoPuzzle
                 tb1flag.Enabled = false;
                 MessageBox.Show("Felicitari!");
             }
-            else if ((lblCNo.Text == "2") && (tb1flag.Text == "Polonia") && (tb2flag.Text == "Romania") && (tb3flag.Text == "Regatul Unit") && (tb4flag.Text == "Turcia") && (tb5flag.Text == "Thailanda") && (tb6flag.Text == "America"))
+            else if ((lblCNo.Text == "2") && (tb1flag.Text == "Polonia") && (tb2flag.Text == "Romania") && (tb3flag.Text == "Regatul Unit")||(tb3flag.Text == "Marea Britanie") && (tb4flag.Text == "Turcia") && (tb5flag.Text == "Thailanda") && (tb6flag.Text == "America")||(tb6flag.Text == "Statele Unite ale Americii")||(tb6flag.Text == "SUA"))
             {
                 buttonStartFlag.Enabled = true;
                 btnSubmit.Enabled = false;
