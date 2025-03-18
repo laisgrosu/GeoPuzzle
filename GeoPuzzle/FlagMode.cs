@@ -91,10 +91,10 @@ namespace GeoPuzzle
         }
 
         private void buttonBackFlag_Click(object sender, EventArgs e)
-{
-    MainMenu menu = new MainMenu(); // Creezi o nouă instanță a meniului
-    menu.Show(); // Afișezi meniul
-    this.Close(); // Închizi formularul curent (FlagMode)
+        {
+            MainMenu menu = new MainMenu(); // Creezi o nouă instanță a meniului
+            menu.Show(); // Afișezi meniul
+            this.Close(); // Închizi formularul curent (FlagMode)
 }
         private void pictureBox2_Click(object sender, EventArgs e)
         {
