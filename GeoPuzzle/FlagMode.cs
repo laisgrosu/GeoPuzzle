@@ -96,7 +96,7 @@ namespace GeoPuzzle
                 btnSubmit.Enabled = true;
 
             }
-            if (numNO == 4)
+            if (numNO == 5)
             {
                 buttonStartFlag.Enabled = false;
                 pictureBox1.Image = Properties.Resources.belarsu_flag;
