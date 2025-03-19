@@ -25,7 +25,7 @@ namespace GeoPuzzle
             tiles = new PictureBox[] { pb1, pb2, pb3, pb4, pb5, pb6, pb7, pb8, pb9 };
             correctOrder1 = new Image[]
             {
-            Properties.Resources._1, Properties.Resources._8, Properties.Resources._7,
+            Properties.Resources._9, Properties.Resources._8, Properties.Resources._7,
             Properties.Resources._6, Properties.Resources._5, Properties.Resources._4,
             Properties.Resources._3, Properties.Resources._2, Properties.Resources._1
             };
