@@ -15,6 +15,8 @@ namespace GeoPuzzle
         public FlagMode()
         {
             InitializeComponent();
+            this.Size = new Size(1000, 600);
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

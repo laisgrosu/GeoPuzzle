@@ -15,6 +15,8 @@ namespace GeoPuzzle
         public MainMenu()
         {
             InitializeComponent();
+            this.Size = new Size(800, 550);
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void butonPuzzle_Click(object sender, EventArgs e)
