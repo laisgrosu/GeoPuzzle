@@ -106,6 +106,7 @@
             // labelFlag
             // 
             this.labelFlag.AutoSize = true;
+            this.labelFlag.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelFlag.Font = new System.Drawing.Font("Segoe Print", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFlag.Location = new System.Drawing.Point(305, 33);
             this.labelFlag.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);

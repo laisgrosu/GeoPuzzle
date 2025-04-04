@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace GeoPuzzle
 {
     public partial class PuzzleMode : Form
     {
+
+        private Stopwatch stopwatch = new Stopwatch();
         private Random random = new Random();
         private PictureBox[] tiles;
         private PictureBox firstClicked = null;
@@ -93,6 +96,7 @@ namespace GeoPuzzle
         // Încărcăm puzzle-ul cu imaginea aleasă
         private void LoadPuzzle(Image[] correctOrder)
         {
+            stopwatch.Restart();
             for (int i = 0; i < 9; i++)
             {
                 tiles[i].Image = correctOrder[i];
@@ -130,7 +134,11 @@ namespace GeoPuzzle
                 if (tiles[i].Image != currentCorrectOrder[i])
                     return;
             }
-            MessageBox.Show("Felicitări! Ai rezolvat puzzle-ul!", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            stopwatch.Stop(); // Oprim cronometrul
+            TimeSpan elapsedTime = stopwatch.Elapsed; // Obținem timpul total
+
+            MessageBox.Show($"Felicitări! Ai rezolvat puzzle-ul în {elapsedTime.Minutes} minute și {elapsedTime.Seconds} secunde!",
+                            "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         private void butonBack_Click(object sender, EventArgs e)
         {
