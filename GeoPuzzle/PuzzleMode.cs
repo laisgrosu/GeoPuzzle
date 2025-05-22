@@ -104,6 +104,11 @@ namespace GeoPuzzle
             ShuffleTiles();
         }
 
+        private void PuzzleMode_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void ShuffleTiles()
         {
             for (int i = 0; i < 9; i++)
@@ -142,9 +147,9 @@ namespace GeoPuzzle
         }
         private void butonBack_Click(object sender, EventArgs e)
         {
-                MainMenu menu = new MainMenu();
-                menu.Show();
-                this.Close();
+            MainMenu menu = new MainMenu();
+            menu.Show();
+            this.Close();
         }
     }
 }

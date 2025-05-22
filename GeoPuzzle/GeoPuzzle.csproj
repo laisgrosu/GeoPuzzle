@@ -380,7 +380,7 @@
     <None Include="Resources\question_marks_background1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\close-up-puzzle-background.jpg" />
+    <None Include="Resources\closeuppuzzlebackground.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
