@@ -15,21 +15,63 @@ namespace GeoPuzzle
         private Dictionary<Control, Rectangle> originalBounds = new Dictionary<Control, Rectangle>();
         private Size originalFormSize;
         private Size originalPanelSize;
-        private float baseFontSize = 12f; // ajustează după fontul inițial
+        private float baseFontSize = 12f;
+
+        private Dictionary<Image, List<string>> flagNames = new Dictionary<Image, List<string>>();
+        private Queue<List<Image>> lastRoundsFlags = new Queue<List<Image>>();
+        private int roundsMemory = 3;
+        private List<Image> currentFlags = new List<Image>();
 
         public FlagMode()
         {
             InitializeComponent();
             this.Size = new Size(1000, 600);
             this.StartPosition = FormStartPosition.CenterScreen;
-
             this.Load += FlagMode_Load;
             this.Resize += FlagMode_Resize;
+
+            InitializeFlagNames(); // initializez țările pentru steaguri
+        }
+
+        private void InitializeFlagNames()
+        {
+            flagNames = new Dictionary<Image, List<string>>
+    {
+        { Properties.Resources.brazil_flag, new List<string> { "Brazilia", "BRAZILIA" } },
+        { Properties.Resources.portugal_flag, new List<string> { "Portugalia", "PORTUGALIA" } },
+        { Properties.Resources.japonia_flag, new List<string> { "Japonia", "JAPONIA" } },
+        { Properties.Resources.franta_flag, new List<string> { "Franța", "FRANȚA", "Franta", "FRANTA" } },
+        { Properties.Resources.india_flag, new List<string> { "India", "INDIA" } },
+        { Properties.Resources.cehia_flag, new List<string> { "Cehia", "CEHIA" } },
+        { Properties.Resources.plonia_flag, new List<string> { "Polonia", "POLONIA" } },
+        { Properties.Resources.romania_flag, new List<string> { "România", "ROMÂNIA", "Romania", "ROMANIA" } },
+        { Properties.Resources.uk_flag, new List<string> { "Regatul Unit", "REGATUL UNIT", "United Kingdom", "UNITED KINGDOM" } },
+        { Properties.Resources.turcia_flag, new List<string> { "Turcia", "TURCIA" } },
+        { Properties.Resources.tailanda_flag, new List<string> { "Thailanda", "THAILANDA" } },
+        { Properties.Resources.sua_flag, new List<string> { "Statele Unite ale Americii", "STATELE UNITE ALE AMERICII", "SUA", "USA" } },
+        { Properties.Resources.uruguay_flag_flag, new List<string> { "Uruguay", "URUGUAY" } },
+        { Properties.Resources.venezuela_flag, new List<string> { "Venezuela", "VENEZUELA" } },
+        { Properties.Resources.south_coreea_flag, new List<string> { "Coreea de Sud", "COREEA DE SUD", "South Korea", "SOUTH KOREA" } },
+        { Properties.Resources.olanda_flag, new List<string> { "Olanda", "OLANDA" } },
+        { Properties.Resources.filipine_flag, new List<string> { "Filipine", "FILIPINE" } },
+        { Properties.Resources.dameraca_flag, new List<string> { "Danemarca", "DANEMARCA" } },
+        { Properties.Resources.madagascar_flag, new List<string> { "Madagascar", "MADAGASCAR" } },
+        { Properties.Resources.mongolia_flag, new List<string> { "Mongolia", "MONGOLIA" } },
+        { Properties.Resources.puerto_rico_flag_pnh, new List<string> { "Puerto Rico", "PUERTO RICO" } },
+        { Properties.Resources.zambia_flag, new List<string> { "Zambia", "ZAMBIA" } },
+        { Properties.Resources.uganda_flag, new List<string> { "Uganda", "UGANDA" } },
+        { Properties.Resources.south_africa_flag, new List<string> { "Africa de Sud", "AFRICA DE SUD", "South Africa", "SOUTH AFRICA" } },
+        { Properties.Resources.belarsu_flag, new List<string> { "Belarus", "BELARUS" } },
+        { Properties.Resources.canada_flag, new List<string> { "Canada", "CANADA" } },
+        { Properties.Resources.costa_rica_flag, new List<string> { "Costa Rica", "COSTA RICA" } },
+        { Properties.Resources.chile_flag, new List<string> { "Chile", "CHILE" } },
+        { Properties.Resources.china_flag, new List<string> { "China", "CHINA" } },
+        { Properties.Resources.sudan_flag, new List<string> { "Sudan", "SUDAN" } }
+    };
         }
 
         private void FlagMode_Load(object sender, EventArgs e)
         {
-            // presupun că ai un panel numit panelFlag unde ai toate controalele
             originalFormSize = this.ClientSize;
             originalPanelSize = panelFlag.Size;
 
@@ -45,220 +87,167 @@ namespace GeoPuzzle
             float yRatio = (float)this.ClientSize.Height / originalFormSize.Height;
             float scaleRatio = Math.Min(xRatio, yRatio);
 
-            int newPanelWidth = (int)(originalPanelSize.Width * xRatio);
-            int newPanelHeight = (int)(originalPanelSize.Height * yRatio);
-            panelFlag.Size = new Size(newPanelWidth, newPanelHeight);
-
-            panelFlag.Location = new Point(
-                (this.ClientSize.Width - panelFlag.Width) / 2,
-                (this.ClientSize.Height - panelFlag.Height) / 2
-            );
+            panelFlag.Size = new Size((int)(originalPanelSize.Width * xRatio), (int)(originalPanelSize.Height * yRatio));
+            panelFlag.Location = new Point((this.ClientSize.Width - panelFlag.Width) / 2, (this.ClientSize.Height - panelFlag.Height) / 2);
 
             foreach (Control ctrl in panelFlag.Controls)
             {
                 Rectangle original = originalBounds[ctrl];
-                int newX = (int)(original.X * xRatio);
-                int newY = (int)(original.Y * yRatio);
-                int newWidth = (int)(original.Width * xRatio);
-                int newHeight = (int)(original.Height * yRatio);
+                ctrl.Bounds = new Rectangle(
+                    (int)(original.X * xRatio),
+                    (int)(original.Y * yRatio),
+                    (int)(original.Width * xRatio),
+                    (int)(original.Height * yRatio)
+                );
 
-                ctrl.Bounds = new Rectangle(newX, newY, newWidth, newHeight);
-
-                // scalează fontul
                 float newFontSize = baseFontSize * scaleRatio;
-                if (newFontSize < 8f) newFontSize = 8f;
-                ctrl.Font = new Font(ctrl.Font.FontFamily, newFontSize, ctrl.Font.Style);
+                ctrl.Font = new Font(ctrl.Font.FontFamily, Math.Max(newFontSize, 8f), ctrl.Font.Style);
             }
 
             labelFlag.Left = (panelFlag.Width - labelFlag.Width) / 2;
         }
-    private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelFlag_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        private Queue<List<Image>> lastRoundsFlags = new Queue<List<Image>>();
-        private int roundsMemory = 3;
 
         private void buttonStartFlag_Click(object sender, EventArgs e)
         {
-            // Golim casetele
             foreach (Control ctrl in panelFlag.Controls)
             {
-                if (ctrl is TextBox)
-                    ((TextBox)ctrl).Text = "";
-            }
-
-            Random rnd = new Random();
-
-            // Toate steagurile
-            List<Image> allFlags = new List<Image>()
-    {
-        Properties.Resources.brazil_flag,
-        Properties.Resources.portugal_flag,
-        Properties.Resources.japonia_flag,
-        Properties.Resources.franta_flag,
-        Properties.Resources.india_flag,
-        Properties.Resources.cehia_flag,
-        Properties.Resources.plonia_flag,
-        Properties.Resources.romania_flag,
-        Properties.Resources.uk_flag,
-        Properties.Resources.turcia_flag,
-        Properties.Resources.tailanda_flag,
-        Properties.Resources.sua_flag,
-        Properties.Resources.uruguay_flag_flag,
-        Properties.Resources.venezuela_flag,
-        Properties.Resources.south_coreea_flag,
-        Properties.Resources.olanda_flag,
-        Properties.Resources.filipine_flag,
-        Properties.Resources.dameraca_flag,
-        Properties.Resources.madagascar_flag,
-        Properties.Resources.mongolia_flag,
-        Properties.Resources.puerto_rico_flag_pnh,
-        Properties.Resources.zambia_flag,
-        Properties.Resources.uganda_flag,
-        Properties.Resources.south_africa_flag,
-        Properties.Resources.belarsu_flag,
-        Properties.Resources.canada_flag,
-        Properties.Resources.costa_rica_flag,
-        Properties.Resources.chile_flag,
-        Properties.Resources.china_flag,
-        Properties.Resources.sudan_flag
-    };
-
-            List<Image> flagsForRound = null;
-            bool validSelection = false;
-
-            while (!validSelection)
-            {
-                flagsForRound = allFlags.OrderBy(x => rnd.Next()).Take(6).ToList();
-
-                // verificăm dacă steagurile alese nu se regăsesc în ultimele 3 runde
-                validSelection = true;
-
-                foreach (var pastRound in lastRoundsFlags)
+                if (ctrl is TextBox tb)
                 {
-                    // dacă există vreun steag comun, nu e valid
-                    if (flagsForRound.Intersect(pastRound).Any())
-                    {
-                        validSelection = false;
-                        break;
-                    }
+                    tb.Text = ""; // goli textul
+                    tb.BackColor = SystemColors.Window; // reset la culoarea default (alb)
+                    tb.Enabled = true; // reactivare
                 }
             }
 
-            // adaugăm runda curentă în coadă
-            lastRoundsFlags.Enqueue(flagsForRound);
+            btnSubmit.Enabled = true;
 
+            Random rnd = new Random();
+            var allFlags = flagNames.Keys.ToList();
+
+            bool validSelection = false;
+            while (!validSelection)
+            {
+                currentFlags = allFlags.OrderBy(x => rnd.Next()).Take(6).ToList();
+                validSelection = !lastRoundsFlags.Any(past => currentFlags.Intersect(past).Any());
+            }
+
+            lastRoundsFlags.Enqueue(currentFlags);
             if (lastRoundsFlags.Count > roundsMemory)
                 lastRoundsFlags.Dequeue();
 
-            // setăm imaginile
-            pictureBox1.Image = flagsForRound[0];
-            pictureBox2.Image = flagsForRound[1];
-            pictureBox3.Image = flagsForRound[2];
-            pictureBox4.Image = flagsForRound[3];
-            pictureBox5.Image = flagsForRound[4];
-            pictureBox6.Image = flagsForRound[5];
+            // Setăm imaginile
+            pictureBox1.Image = currentFlags[0];
+            pictureBox2.Image = currentFlags[1];
+            pictureBox3.Image = currentFlags[2];
+            pictureBox4.Image = currentFlags[3];
+            pictureBox5.Image = currentFlags[4];
+            pictureBox6.Image = currentFlags[5];
 
             buttonStartFlag.Enabled = false;
-            tb1flag.Enabled = true;
             btnSubmit.Enabled = true;
-        }
 
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonBackFlag_Click(object sender, EventArgs e)
-        {
-            MainMenu menu = new MainMenu(); // Creezi o nouă instanță a meniului
-            menu.Show(); // Afișezi meniul
-            this.Close(); // Închizi formularul curent (FlagMode)
-}
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
+            tb1flag.Enabled = tb2flag.Enabled = tb3flag.Enabled = tb4flag.Enabled = tb5flag.Enabled = tb6flag.Enabled = true;
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            if ((lblCNo.Text == "1") && (tb1flag.Text == "Brazilia") && (tb2flag.Text == "Portugalia") && (tb3flag.Text == "Japonia") && (tb4flag.Text == "Franta")|| (tb4flag.Text == "Franța") && (tb5flag.Text == "India") && (tb6flag.Text == "Cehia"))
+            List<TextBox> textBoxes = new List<TextBox> { tb1flag, tb2flag, tb3flag, tb4flag, tb5flag, tb6flag };
+
+            int correctCount = 0;
+
+            for (int i = 0; i < 6; i++)
             {
-                buttonStartFlag.Enabled = true;
-                btnSubmit.Enabled = false;
-                lblCNo.Text = "0";
-                tb1flag.Enabled = false;
-                MessageBox.Show("Felicitari!");
+                string userInput = textBoxes[i].Text.Trim();
+                List<string> correctAnswersForFlag = flagNames[currentFlags[i]];
+
+                bool isCorrect = correctAnswersForFlag.Any(ans =>
+                    GetAutoCorrectedInput(userInput, ans) == ans
+                );
+
+                if (isCorrect)
+                {
+                    // Gasim varianta corecta care a trecut autocorectia
+                    string correctedAnswer = correctAnswersForFlag.First(ans => GetAutoCorrectedInput(userInput, ans) == ans);
+                    correctCount++;
+                    textBoxes[i].Text = correctedAnswer;
+                    textBoxes[i].BackColor = Color.LightGreen;
+                }
+                else
+                {
+                    textBoxes[i].BackColor = Color.LightCoral;
+                }
             }
-            else if ((lblCNo.Text == "2") && (tb1flag.Text == "Polonia") && (tb2flag.Text == "Romania") && (tb3flag.Text == "Regatul Unit")||(tb3flag.Text == "Marea Britanie") && (tb4flag.Text == "Turcia") && (tb5flag.Text == "Thailanda") && (tb6flag.Text == "America")||(tb6flag.Text == "Statele Unite ale Americii")||(tb6flag.Text == "SUA"))
+
+            if (correctCount == 6)
             {
-                buttonStartFlag.Enabled = true;
+                MessageBox.Show("Felicitări! Ai recunoscut toate cele 6 steaguri corect!");
                 btnSubmit.Enabled = false;
-                lblCNo.Text = "0";
-                tb1flag.Enabled = false;
-                MessageBox.Show("Felicitari!");
-            }
-            else if ((lblCNo.Text == "3") && (tb1flag.Text == "Uruguay") && (tb2flag.Text == "Venezuela") && (tb3flag.Text == "Coreea de Sud") && (tb4flag.Text == "Olanda") && (tb5flag.Text == "Filipine") && (tb6flag.Text == "Danemarca"))
-            {
                 buttonStartFlag.Enabled = true;
-                btnSubmit.Enabled = false;
-                lblCNo.Text = "0";
-                tb1flag.Enabled = false;
-                MessageBox.Show("Felicitari!");
-            }
-            else if ((lblCNo.Text == "4") && (tb1flag.Text == "Madagascar") && (tb2flag.Text == "Mongolia") && (tb3flag.Text == "Puerto Rico") && (tb4flag.Text == "Zambia") && (tb5flag.Text == "Uganda") && (tb6flag.Text == "Africa de Sud"))
-            {
-                buttonStartFlag.Enabled = true;
-                btnSubmit.Enabled = false;
-                lblCNo.Text = "0";
-                tb1flag.Enabled = false;
-                MessageBox.Show("Felicitari!");
-            }
-            else if ((lblCNo.Text == "5") && (tb1flag.Text == "Belarus") && (tb2flag.Text == "Canada") && (tb3flag.Text == "Costa Rica") && (tb4flag.Text == "Chile") && (tb5flag.Text == "China") && (tb6flag.Text == "Sudan"))
-            {
-                buttonStartFlag.Enabled = true;
-                btnSubmit.Enabled = false;
-                lblCNo.Text = "0";
-                tb1flag.Enabled = false;
-                MessageBox.Show("Felicitari!");
+                foreach (var tb in textBoxes)
+                    tb.Enabled = false;
             }
             else
             {
-                MessageBox.Show("Încearcă din nou!");
+                MessageBox.Show($"Ai răspuns corect la {correctCount} din 6. Încearcă din nou!");
+                buttonStartFlag.Enabled = true;
             }
         }
 
-
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private string GetAutoCorrectedInput(string userInput, string correctAnswer)
         {
+            userInput = userInput.Trim();
+            string lowerUser = userInput.ToLower();
+            string lowerCorrect = correctAnswer.ToLower();
 
+            if (lowerUser == lowerCorrect)
+                return correctAnswer; // e corect deja
+
+            // Dacă distanța Levenshtein e mică, îl corectăm
+            if (LevenshteinDistance(lowerUser, lowerCorrect) <= 1)
+                return correctAnswer;
+
+            return userInput; // nu putem corecta
         }
 
-        private void FlagMode_Load_1(object sender, EventArgs e)
+        // Levenshtein pentru autocorecție simplă
+        private int LevenshteinDistance(string a, string b)
         {
+            int[,] dp = new int[a.Length + 1, b.Length + 1];
 
+            for (int i = 0; i <= a.Length; i++) dp[i, 0] = i;
+            for (int j = 0; j <= b.Length; j++) dp[0, j] = j;
+
+            for (int i = 1; i <= a.Length; i++)
+            {
+                for (int j = 1; j <= b.Length; j++)
+                {
+                    int cost = (a[i - 1] == b[j - 1]) ? 0 : 1;
+                    dp[i, j] = Math.Min(
+                        Math.Min(dp[i - 1, j] + 1, dp[i, j - 1] + 1),
+                        dp[i - 1, j - 1] + cost);
+                }
+            }
+
+            return dp[a.Length, b.Length];
         }
 
-        private void panelFlag_Paint(object sender, PaintEventArgs e)
-        {
 
+        private void buttonBackFlag_Click(object sender, EventArgs e)
+        {
+            MainMenu menu = new MainMenu();
+            menu.Show();
+            this.Close();
         }
+
+        // Alte metode goale dacă ai nevoie
+        private void textBox1_TextChanged(object sender, EventArgs e) { }
+        private void pictureBox1_Click(object sender, EventArgs e) { }
+        private void labelFlag_Click(object sender, EventArgs e) { }
+        private void textBox2_TextChanged(object sender, EventArgs e) { }
+        private void pictureBox2_Click(object sender, EventArgs e) { }
+        private void pictureBox3_Click(object sender, EventArgs e) { }
+        private void FlagMode_Load_1(object sender, EventArgs e) { }
+        private void panelFlag_Paint(object sender, PaintEventArgs e) { }
+        private void label2_Click(object sender, EventArgs e) { }
     }
 }
