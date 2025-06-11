@@ -66,6 +66,10 @@ namespace GeoPuzzle
         { Properties.Resources.costa_rica_flag, new List<string> { "Costa Rica", "COSTA RICA" } },
         { Properties.Resources.chile_flag, new List<string> { "Chile", "CHILE" } },
         { Properties.Resources.china_flag, new List<string> { "China", "CHINA" } },
+        { Properties.Resources.bolivia_flsg, new List<string> { "Bolivia", "BOLIIVIA" } },
+        { Properties.Resources.egypt_flag, new List<string> { "Egipt", "EGIPT", "EGYPT", "Egypt"} },
+        { Properties.Resources.kazakhstan_flag, new List<string> { "Kazakhstan", "KAZAKHSTAN"} },
+        { Properties.Resources.cuba_flag, new List<string> { "Cuba", "CUBA"} },
         { Properties.Resources.sudan_flag, new List<string> { "Sudan", "SUDAN" } }
     };
         }
