@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="india3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\india3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="panama flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\panama flag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -151,6 +154,9 @@
   <data name="rom4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rom4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="question_marks_background1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\question_marks_background1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="rom3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rom3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -162,6 +168,9 @@
   </data>
   <data name="columbia flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\columbia flag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="india6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\india6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="venezuela flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\venezuela flag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,6 +226,9 @@
   <data name="cuba flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cuba flag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="india8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\india8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="peru flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\peru flag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -253,11 +265,11 @@
   <data name="egypt flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\egypt flag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="india1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\india1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="co8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\co8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="brazil flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\brazil flag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="portugal flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\portugal flag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -267,6 +279,9 @@
   </data>
   <data name="co9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\co9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="india5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\india5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fra8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fra8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -295,6 +310,9 @@
   <data name="south coreea flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\south coreea flag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -307,14 +325,17 @@
   <data name="co1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\co1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="india7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\india7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="romania flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\romania flag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="usa6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\usa61.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -358,11 +379,14 @@
   <data name="fra1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fra1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="india2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\india2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="costa rica flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\costa rica flag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="brazil flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\brazil flag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="co3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\co3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -388,8 +412,14 @@
   <data name="oman flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\oman flag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="india4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\india4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="uk flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\uk flag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="india9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\india9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="south africa flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\south africa flag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -418,7 +448,31 @@
   <data name="uganda flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\uganda flag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="question_marks_background1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\question_marks_background1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="chi4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chi4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chi5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chi5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chi6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chi6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chi7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chi7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chi8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chi8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chi1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chi1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chi2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chi2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chi3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chi3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chi9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chi9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

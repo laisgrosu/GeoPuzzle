@@ -382,5 +382,25 @@
   <ItemGroup>
     <None Include="Resources\closeuppuzzlebackground.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\chi1.png" />
+    <None Include="Resources\chi2.png" />
+    <Content Include="Resources\chi3.png" />
+    <Content Include="Resources\chi4.png" />
+    <Content Include="Resources\chi5.png" />
+    <Content Include="Resources\chi6.png" />
+    <Content Include="Resources\chi7.png" />
+    <Content Include="Resources\chi8.png" />
+    <Content Include="Resources\chi9.png" />
+    <None Include="Resources\india1.png" />
+    <Content Include="Resources\india2.png" />
+    <Content Include="Resources\india3.png" />
+    <Content Include="Resources\india4.png" />
+    <Content Include="Resources\india5.png" />
+    <Content Include="Resources\india6.png" />
+    <Content Include="Resources\india7.png" />
+    <Content Include="Resources\india8.png" />
+    <Content Include="Resources\india9.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

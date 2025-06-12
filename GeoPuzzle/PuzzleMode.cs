@@ -24,7 +24,7 @@ namespace GeoPuzzle
         private Random random = new Random();
         private PictureBox[] tiles;
         private PictureBox firstClicked = null;
-        private Image[] correctOrder1, correctOrder2, correctOrder3, correctOrder4, correctOrder5;
+        private Image[] correctOrder1, correctOrder2, correctOrder3, correctOrder4, correctOrder5, correctOrder6, correctOrder7;
         private Image[] currentCorrectOrder;
         private float baseFontSize;
 
@@ -64,6 +64,18 @@ namespace GeoPuzzle
                 Properties.Resources.co6, Properties.Resources.co5, Properties.Resources.co4,
                 Properties.Resources.co3, Properties.Resources.co2, Properties.Resources.co1
             };
+            correctOrder6 = new Image[]
+            {
+                Properties.Resources.india1, Properties.Resources.india2, Properties.Resources.india3,
+                Properties.Resources.india4, Properties.Resources.india5, Properties.Resources.india6,
+                Properties.Resources.india7, Properties.Resources.india8, Properties.Resources.india9
+            };
+            correctOrder7 = new Image[]
+            {
+                Properties.Resources.chi1, Properties.Resources.chi2, Properties.Resources.chi3,
+                Properties.Resources.chi4, Properties.Resources.chi5, Properties.Resources.chi6,
+                Properties.Resources.chi7, Properties.Resources.chi8, Properties.Resources.chi9
+            };
 
             foreach (PictureBox tile in tiles)
             {
@@ -76,8 +88,23 @@ namespace GeoPuzzle
         // Functia care alege ce puzzle să încarce
         private void butonStart_Click(object sender, EventArgs e)
         {
-            currentCorrectOrder = correctOrder1;
-            LoadPuzzle(currentCorrectOrder);
+            Random rnd = new Random();
+            int choice = rnd.Next(3);
+            if (choice == 0)
+            {
+                currentCorrectOrder = correctOrder1;
+                LoadPuzzle(currentCorrectOrder);
+            }
+            else if (choice == 1)
+            {
+                currentCorrectOrder = correctOrder6;
+                LoadPuzzle(currentCorrectOrder);
+            }
+            else
+            {
+                currentCorrectOrder = correctOrder7;
+                LoadPuzzle(currentCorrectOrder);
+            }
         }
 
         private void butonStart1_Click_1(object sender, EventArgs e)

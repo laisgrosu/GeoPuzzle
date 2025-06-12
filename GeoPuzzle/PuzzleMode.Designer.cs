@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.PuzzleArea = new System.Windows.Forms.Panel();
+            this.butonBack = new System.Windows.Forms.Button();
+            this.butonStart = new System.Windows.Forms.Button();
+            this.butonStart1 = new System.Windows.Forms.Button();
+            this.butonStart2 = new System.Windows.Forms.Button();
+            this.butonStart4 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pb9 = new System.Windows.Forms.PictureBox();
             this.pb8 = new System.Windows.Forms.PictureBox();
             this.pb7 = new System.Windows.Forms.PictureBox();
@@ -38,13 +44,8 @@
             this.pb3 = new System.Windows.Forms.PictureBox();
             this.pb2 = new System.Windows.Forms.PictureBox();
             this.pb1 = new System.Windows.Forms.PictureBox();
-            this.butonBack = new System.Windows.Forms.Button();
-            this.butonStart = new System.Windows.Forms.Button();
-            this.butonStart1 = new System.Windows.Forms.Button();
-            this.butonStart2 = new System.Windows.Forms.Button();
-            this.butonStart4 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.PuzzleArea.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb7)).BeginInit();
@@ -54,7 +55,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb1)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // PuzzleArea
@@ -73,6 +73,85 @@
             this.PuzzleArea.Name = "PuzzleArea";
             this.PuzzleArea.Size = new System.Drawing.Size(938, 935);
             this.PuzzleArea.TabIndex = 0;
+            // 
+            // butonBack
+            // 
+            this.butonBack.BackColor = System.Drawing.SystemColors.Control;
+            this.butonBack.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butonBack.Location = new System.Drawing.Point(1006, 1001);
+            this.butonBack.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.butonBack.Name = "butonBack";
+            this.butonBack.Size = new System.Drawing.Size(160, 83);
+            this.butonBack.TabIndex = 1;
+            this.butonBack.Text = "Back";
+            this.butonBack.UseVisualStyleBackColor = false;
+            this.butonBack.Click += new System.EventHandler(this.butonBack_Click);
+            // 
+            // butonStart
+            // 
+            this.butonStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.butonStart.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butonStart.Location = new System.Drawing.Point(170, 5);
+            this.butonStart.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.butonStart.Name = "butonStart";
+            this.butonStart.Size = new System.Drawing.Size(156, 71);
+            this.butonStart.TabIndex = 1;
+            this.butonStart.Text = "Asia";
+            this.butonStart.UseVisualStyleBackColor = false;
+            this.butonStart.Click += new System.EventHandler(this.butonStart_Click);
+            // 
+            // butonStart1
+            // 
+            this.butonStart1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.butonStart1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butonStart1.Location = new System.Drawing.Point(317, 5);
+            this.butonStart1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.butonStart1.Name = "butonStart1";
+            this.butonStart1.Size = new System.Drawing.Size(156, 71);
+            this.butonStart1.TabIndex = 2;
+            this.butonStart1.Text = "Europa";
+            this.butonStart1.UseVisualStyleBackColor = false;
+            this.butonStart1.Click += new System.EventHandler(this.butonStart1_Click_1);
+            // 
+            // butonStart2
+            // 
+            this.butonStart2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.butonStart2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butonStart2.Location = new System.Drawing.Point(463, 5);
+            this.butonStart2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.butonStart2.Name = "butonStart2";
+            this.butonStart2.Size = new System.Drawing.Size(269, 71);
+            this.butonStart2.TabIndex = 3;
+            this.butonStart2.Text = "America de Nord";
+            this.butonStart2.UseVisualStyleBackColor = false;
+            this.butonStart2.Click += new System.EventHandler(this.butonStart2_Click_1);
+            // 
+            // butonStart4
+            // 
+            this.butonStart4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.butonStart4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butonStart4.Location = new System.Drawing.Point(731, 5);
+            this.butonStart4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.butonStart4.Name = "butonStart4";
+            this.butonStart4.Size = new System.Drawing.Size(236, 71);
+            this.butonStart4.TabIndex = 5;
+            this.butonStart4.Text = "America de Sud";
+            this.butonStart4.UseVisualStyleBackColor = false;
+            this.butonStart4.Click += new System.EventHandler(this.butonStart4_Click_1);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.butonStart4);
+            this.panel1.Controls.Add(this.butonBack);
+            this.panel1.Controls.Add(this.butonStart2);
+            this.panel1.Controls.Add(this.butonStart1);
+            this.panel1.Controls.Add(this.PuzzleArea);
+            this.panel1.Controls.Add(this.butonStart);
+            this.panel1.Location = new System.Drawing.Point(277, 39);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1164, 1102);
+            this.panel1.TabIndex = 6;
             // 
             // pb9
             // 
@@ -155,85 +234,6 @@
             this.pb1.TabIndex = 0;
             this.pb1.TabStop = false;
             // 
-            // butonBack
-            // 
-            this.butonBack.BackColor = System.Drawing.SystemColors.Control;
-            this.butonBack.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.butonBack.Location = new System.Drawing.Point(1006, 1001);
-            this.butonBack.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.butonBack.Name = "butonBack";
-            this.butonBack.Size = new System.Drawing.Size(160, 83);
-            this.butonBack.TabIndex = 1;
-            this.butonBack.Text = "Back";
-            this.butonBack.UseVisualStyleBackColor = false;
-            this.butonBack.Click += new System.EventHandler(this.butonBack_Click);
-            // 
-            // butonStart
-            // 
-            this.butonStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.butonStart.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.butonStart.Location = new System.Drawing.Point(143, 5);
-            this.butonStart.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.butonStart.Name = "butonStart";
-            this.butonStart.Size = new System.Drawing.Size(156, 71);
-            this.butonStart.TabIndex = 1;
-            this.butonStart.Text = "Asia";
-            this.butonStart.UseVisualStyleBackColor = false;
-            this.butonStart.Click += new System.EventHandler(this.butonStart_Click);
-            // 
-            // butonStart1
-            // 
-            this.butonStart1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.butonStart1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.butonStart1.Location = new System.Drawing.Point(290, 5);
-            this.butonStart1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.butonStart1.Name = "butonStart1";
-            this.butonStart1.Size = new System.Drawing.Size(156, 71);
-            this.butonStart1.TabIndex = 2;
-            this.butonStart1.Text = "Europa";
-            this.butonStart1.UseVisualStyleBackColor = false;
-            this.butonStart1.Click += new System.EventHandler(this.butonStart1_Click_1);
-            // 
-            // butonStart2
-            // 
-            this.butonStart2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.butonStart2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.butonStart2.Location = new System.Drawing.Point(436, 5);
-            this.butonStart2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.butonStart2.Name = "butonStart2";
-            this.butonStart2.Size = new System.Drawing.Size(269, 71);
-            this.butonStart2.TabIndex = 3;
-            this.butonStart2.Text = "America de Nord";
-            this.butonStart2.UseVisualStyleBackColor = false;
-            this.butonStart2.Click += new System.EventHandler(this.butonStart2_Click_1);
-            // 
-            // butonStart4
-            // 
-            this.butonStart4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.butonStart4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.butonStart4.Location = new System.Drawing.Point(704, 5);
-            this.butonStart4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.butonStart4.Name = "butonStart4";
-            this.butonStart4.Size = new System.Drawing.Size(236, 71);
-            this.butonStart4.TabIndex = 5;
-            this.butonStart4.Text = "America de Sud";
-            this.butonStart4.UseVisualStyleBackColor = false;
-            this.butonStart4.Click += new System.EventHandler(this.butonStart4_Click_1);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Controls.Add(this.butonStart4);
-            this.panel1.Controls.Add(this.butonBack);
-            this.panel1.Controls.Add(this.butonStart2);
-            this.panel1.Controls.Add(this.butonStart1);
-            this.panel1.Controls.Add(this.PuzzleArea);
-            this.panel1.Controls.Add(this.butonStart);
-            this.panel1.Location = new System.Drawing.Point(277, 39);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1189, 1102);
-            this.panel1.TabIndex = 6;
-            // 
             // PuzzleMode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -247,6 +247,7 @@
             this.Text = "PuzzleMode";
             this.Load += new System.EventHandler(this.PuzzleMode_Load);
             this.PuzzleArea.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pb9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb7)).EndInit();
@@ -256,7 +257,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb1)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -269,7 +269,6 @@
         private System.Windows.Forms.PictureBox pb9;
         private System.Windows.Forms.PictureBox pb8;
         private System.Windows.Forms.PictureBox pb7;
-        private System.Windows.Forms.PictureBox pb6;
         private System.Windows.Forms.PictureBox pb5;
         private System.Windows.Forms.PictureBox pb4;
         private System.Windows.Forms.PictureBox pb3;
@@ -279,5 +278,6 @@
         private System.Windows.Forms.Button butonStart2;
         private System.Windows.Forms.Button butonStart4;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pb6;
     }
 }
